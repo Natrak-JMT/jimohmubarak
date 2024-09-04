@@ -11,7 +11,7 @@ import { TiSocialTwitter } from "react-icons/ti";
 import { ImWhatsapp } from "react-icons/im";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast} from 'react-toastify'
-import {Button} from 'antd'
+
 
 function Contact() {
   const [name,setName]=useState('')
@@ -117,10 +117,11 @@ function Contact() {
       <textarea rows='5' placeholder='Message' value={Message}
        onChange={((e)=>{setMessage(e.target.value)})} required 
        className='w-full bg-gray-950  outline-none py- border-b-2'></textarea>
-       <Button type='primary' 
+       <button type='submit' className='two' ><p className='text'>{loading?'Submitting...':'Send Message'}</p></button>
+       {/* <Button type='primary' 
        loading={loading}
        className=' font-bold bg-transparent text-xl px-2 py-2 rounded-lg bg-gradient-to-r from-green-500 to-blue-500'
-        htmlType='submit'>{loading?'Submitting...':'Send Message'}</Button>
+        htmlType='submit'>{loading?'Submitting...':'Send Message'}</Button> */}
       {/* <button className=' font-bold bg-transparent px-2 py-2 rounded-lg bg-gradient-to-r from-green-500 to-blue-500'>Send Message</button> */}
      </form>
      <ToastContainer />
