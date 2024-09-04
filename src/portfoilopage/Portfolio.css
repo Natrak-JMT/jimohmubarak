@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.lets{
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+.overplay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(233, 30, 99, 0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height 0.3s ease;
+    
+    
+}
+.lets:hover .overplay,
+.lets:active .overplay{
+    height: 100%;
+    
+}
+.h2{
+    /* width: 100%; */
+    /* margin-top: 10%; */
+    color: white;
+    font-size: 2vw;
+   
+    /* text-align: center; */
+    font-family: monospace;
+    transform: rotate(-10deg)skewX(20deg); 
+}
+.p{
+    /* text-align: center; */
+    color: white;
+    font-family: monospace;
+    /* margin: 60% 0 0 20%; */
+    /* font-size: 1.5vw; */
+    width: 100%;
+    /* letter-spacing: 5px; */
+    /* line-height: 1.5em; */
+}
+ .mub{
+    border: 1px solid white;
+    padding: 90px 50px;
+}
+@media screen and (max-width:960px) {
+    .lets:active .overplay{
+        height: 100%;
+        
+    }
+   
+}

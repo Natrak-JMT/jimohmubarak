@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#home{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.50)) ,  url('../img/computerbg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+ /* .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.possible{
+    color:white;
+    letter-spacing: 2px;
+} */
+.button-91 {
+  --c: #fff;
+  background: 
+  linear-gradient(
+    rgba(255, 255, 255, 0.3), /* Light reflection */
+    rgba(0, 0, 0, 0.1)
+),
+linear-gradient(
+    rgba(0, 0, 0, 0.3), /* Transparent black */
+    rgba(0, 0, 0, 0.2)
+), 
+rgba(0, 0, 0, 0.2); /* Transparent base layer */
+background-blend-mode: overlay, screen;
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+ calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+.button-91:hover,
+.button-91:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+.button-91:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+.button-91 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+} 
+button.button-1,
+button.button-1:before,
+button.button-1:after {
+  box-sizing: border-box;
+}
+button.button-1 {
+  touch-action: manipulation;
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: block;
+  height: 60px;
+  width: 175px;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0 auto;
+  border-radius: 10px;
+  top: 0;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  -ms-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+button.button-1 {
+  touch-action: manipulation;
+  -webkit-transform: perspective(500px) rotateX(35deg);
+}
+button.button-1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background: #E91E63;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #E91E63 0%, #E91E63 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E91E63), color-stop(100%, #E91E63));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,#E91E63 0%, #E91E63 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #E91E63 0%, #E91E63 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #E91E63 0%, #E91E63 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #E91E63 0%, #E91E63 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#E91E630", endColorstr="#E91E63",GradientType=0 );
+  /* IE6-9 */
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.3);
+}
+
+button.button-1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 1px;
+  height: 15px;
+  width: 173px;
+  background:#E91E63 ;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #E91E63 0%, #E91E63 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ba2500), color-stop(100%, #9b3100));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #E91E63 0%, #e91e63 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #E91E63 0%, #E91E63 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #E91E63 0%, #E91E63 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #E91E63 0%, #E91E63 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#E91E63", endColorstr="#E91E63",GradientType=0 );
+  /* IE6-9 */
+  border-radius: 0 0 5px 5px;
+  -webkit-transform: perspective(500px) rotateX(-40deg);
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.5), 0 3px 2px -1px black;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  -ms-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+button.button-1:hover {
+  top: -3px;
+}
+
+button.button-1:hover:after {
+  height: 18.5px;
+  bottom: -13px;
+}
+
+button.button-1:active {
+  top: 0px;
+}
+
+button.button-1:active:after {
+  height: 15px;
+  bottom: -10px;
+}
+
+button.button-1 .text {
+  position: relative;
+  z-index: 2;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.button-92 {
+      --c: #fff;
+      background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+        #E91E63 ;
+      color: #0000;
+      border: none;
+      transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+      text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+     calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+      outline-offset: .1em;
+      transition: 0.3s;
+    }
+    .button-92:hover,
+    .button-92:focus-visible {
+      --_p: 0%;
+      --_i: 1;
+    }
+    .button-92:active {
+      text-shadow: none;
+      color: var(--c);
+      box-shadow: inset 0 0 9e9q #0005;
+      transition: 0s;
+    }
+    .button-92 {
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 0;
+      cursor: pointer;
+      padding: .1em .3em;
+    }  
+    @media screen and (max-width:960px) {
+      #home{
+        max-width: 100%;
+        align-items:center;
+        padding-top:  0px ;
+        height: auto;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        gap: 50px;
+       
+      }
+      /* .menu{
+        gap: 40px;
+        
+      } */
+    }
